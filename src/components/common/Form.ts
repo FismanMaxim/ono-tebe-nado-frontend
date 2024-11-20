@@ -7,7 +7,7 @@ interface IFormState {
     errors: string;
 }
 
-export class Form<T> extends Component<IFormState> {
+export class Form<T> extends Component {
     protected _submit: HTMLButtonElement;
     protected _errors: HTMLElement;
 

@@ -73,16 +73,16 @@
     </footer>
 </div>
 
-<div class="modal" id="modal-container">
-    <div class="modal__container">
-        <button class="modal__close" aria-label="закрыть"></button>
-        <div class="modal__content">
+<!--<div class="modal" id="modal-container">-->
+<!--    <div class="modal__container">-->
+<!--        <button class="modal__close" aria-label="закрыть"></button>-->
+<!--        <div class="modal__content">-->
 
-        </div>
-    </div>
-</div>
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
-<div class="modal">
+<div class="modal" id="make-bid-modal">
     <div class="modal__container">
         <button class="modal__close" aria-label="закрыть"></button>
         <div class="modal__content">
@@ -139,13 +139,13 @@
     </div>
 </div>
 
-<div class="modal">
+<div class="modal" id="cart-active">
     <div class="modal__container">
         <button class="modal__close" aria-label="закрыть"></button>
         <div class="modal__content">
             <nav class="tabs">
                 <button disabled class="button button_outline tabs__item_active">Активные</button>
-                <button class="button button_outline">Закрытые</button>
+                <button class="button button_outline" id="cart-active-closed">Закрытые</button>
             </nav>
             <div class="basket">
                 <div class="basket__item bid">
@@ -170,12 +170,12 @@
     </div>
 </div>
 
-<div class="modal">
+<div class="modal" id="cart-closed">
     <div class="modal__container">
         <button class="modal__close" aria-label="закрыть"></button>
         <div class="modal__content">
             <nav class="tabs">
-                <button class="button button_outline">Активные</button>
+                <button class="button button_outline" id="cart-closed-active">Активные</button>
                 <button disabled class="button button_outline tabs__item_active">Закрытые</button>
             </nav>
             <form class="basket">
@@ -211,13 +211,13 @@
     </div>
 </div>
 
-<div class="modal">
+<div class="modal" id="cart-empty">
     <div class="modal__container">
         <button class="modal__close" aria-label="закрыть"></button>
         <div class="modal__content">
             <nav class="tabs">
-                <button class="button button_outline">Активные</button>
-                <button disabled class="button button_outline tabs__item_active">Закрытые</button>
+                <button class="button button_outline" id="cart-empty-active">Активные</button>
+                <button disabled class="button button_outline tabs__item_active" id="cart-empty-closed">Закрытые</button>
             </nav>
             <div class="state">
                 <img class="state__image" src="<%=require('../images/soft-flower.svg')%>" />
@@ -228,7 +228,7 @@
     </div>
 </div>
 
-<div class="modal">
+<div class="modal" id="order-successful-modal">
     <div class="modal__container">
         <button class="modal__close" aria-label="закрыть"></button>
         <div class="modal__content">
@@ -242,16 +242,16 @@
     </div>
 </div>
 
-<div class="modal">
+<div class="modal" id="email-phone-modal">
     <div class="modal__container">
         <button class="modal__close" aria-label="закрыть"></button>
         <div class="modal__content">
             <form class="form">
                 <label class="form__label">
-                    <input type="email" class="form__input" placeholder="Email" />
+                    <input type="email" id="email-input"  class="form__input" placeholder="Email" />
                 </label>
                 <label class="form__label">
-                    <input type="text" class="form__input" placeholder="+7 (" />
+                    <input type="text" id="phone-input" class="form__input" placeholder="+7 (" />
                 </label>
                 <div class="form__footer">
                     <button class="button">Оформить</button>

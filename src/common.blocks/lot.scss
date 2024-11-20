@@ -14,7 +14,7 @@
 
   &__status {
     @include mixins.flex(column);
-    gap: 3rem;
+    gap: 1rem;
   }
 
   &__content {
@@ -47,6 +47,21 @@
   }
 
   &__auction {
+    @include mixins.flex(column);
+    align-items: center;
+
+    &-timer {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    &-text {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+
+  &__status {
     @include mixins.flex(column);
     align-items: center;
 
